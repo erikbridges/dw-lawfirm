@@ -1,0 +1,120 @@
+.about-banner {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-banner-header {
+  margin-top: auto;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.about-banner-header h1 {
+  font-size: 5rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: #f4f4f4;
+  letter-spacing: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+}
+
+.about-banner-header::after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(102, 49, 0, 0.7);
+}
+
+.about-container {
+  padding: 5px;
+  background-color: #f4f4f4;
+  padding-bottom: 40px;
+}
+
+.about-container.sec-1 {
+  padding: 20px;
+  color: #111;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.about-container.sec-1 h1 {
+  font-size: 2rem;
+  padding: 20px 0px;
+  flex: 100%;
+  text-align: center;
+}
+
+.about-container.sec-1 p {
+  line-height: 2em;
+}
+
+.bubble-circle {
+  background-color: rgba(102, 49, 0, 1);
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.bubble-circle span {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #f4f4f4;
+  margin-bottom: auto;
+}
+
+.bubble-circle svg {
+  display: block;
+  flex: 100%;
+  color: #f4f4f4;
+  font-size: 4rem;
+}
+
+.bubble-circle span {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 968px) {
+  .about-banner-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-banner-header {
+    margin-bottom: 20px;
+  }
+
+  .about-container.sec-1 {
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .about-container.sec-1 h1 {
+    padding: 20px;
+  }
+}

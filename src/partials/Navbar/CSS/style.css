@@ -1,0 +1,167 @@
+.nav-main {
+  padding: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  transition: 0.2s ease-in;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.logo-nav {
+  font-family: "Georgia", Arial, Helvetica, sans-serif;
+  color: #f4f4f4;
+  font-size: 2rem;
+  transition: 0.2s ease-in;
+}
+
+.logo-nav.scrollStyle {
+  color: #094da7;
+  transform: scale(0.7);
+  transition: 0.2s ease-in;
+}
+
+.slogen {
+  display: block;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.nav-container {
+  margin-left: auto;
+}
+
+.nav-container a {
+  color: #f4f4f4;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.nav-container.scrollStyle a {
+  color: #094da7;
+}
+
+.nav-container a:hover {
+  opacity: 0.7;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.nav-main.scrollStyle {
+  background: rgba(244, 244, 244, 0.9);
+  transition: 0.2s ease-in;
+  padding: 20px;
+}
+
+/* Mobile Only */
+.nav-mobile {
+  padding: 20px;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(244, 244, 244);
+  color: #094da7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container-mobile {
+  position: fixed;
+  min-height: 100vh;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: 0;
+  width: 300px;
+  z-index: 999;
+  transform: translateX(500px);
+  transition: 0.2s ease-in;
+}
+
+.nav-container-mobile.active {
+  transform: translateX(0px) !important;
+  z-index: 999;
+}
+
+.overlay.navbar-active {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  z-index: 950;
+}
+
+.nav-wrapper-mobile {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #f4f4f4;
+}
+
+.nav-wrapper-mobile a {
+  display: block;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  font-family: "Georgia", Arial, Helvetica, sans-serif;
+  color: #094da7;
+  font-size: 2rem;
+}
+
+.nav-wrapper-mobile a:hover {
+  background: #000e20;
+  color: #f4f4f4;
+}
+
+.nav-mobile-collapse {
+  display: block;
+  margin-left: auto;
+}
+
+.nav-mobile-collapse:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav-mobile-collapse>span {
+  width: 30px;
+  background: #333;
+  display: block;
+  z-index: 999;
+  height: 2px;
+  margin: 5px;
+}
+
+.navbar-active {
+  transform: translateX(0) !important;
+}
+
+.logo-nav-mobile {
+  font-family: "Georgia", Arial, Helvetica, sans-serif;
+  color: #094da7;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in;
+  text-align: center;
+}
+
+.logo-nav-mobile.slogen {
+  font-size: 0.95rem;
+}
+
+.map-contact {
+  margin: 20px;
+}
