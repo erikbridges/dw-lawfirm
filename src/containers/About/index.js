@@ -29,27 +29,27 @@ function Index() {
         </p>
       </section>
       <section className="about-container">
-        <Grid>
+        <Grid xs="center">
           <Row between="xs">
-            <Col xs={6} lg={2}>
+            <Col xs={12} md={6} lg={2}>
               <div className="bubble-circle">
                 <FontAwesomeIcon icon={faCopyright} />
                 <span>Copyright Paperwork</span>
               </div>
             </Col>
-            <Col xs={6} lg={2}>
+            <Col xs={12} md={6} lg={2}>
               <div className="bubble-circle">
                 <FontAwesomeIcon icon={faHospital} />
                 <span> Unexpected Accidents</span>
               </div>
-            </Col>
-            <Col xs={6} lg={2}>
+            </Col> 
+            <Col xs={12} md={6} lg={2}>
               <div className="bubble-circle">
                 <FontAwesomeIcon icon={faFile} />
                 <span>Register Business Paperwork</span>
               </div>
             </Col>
-            <Col xs={6} lg={2}>
+            <Col xs={12} md={6} lg={2}>
               <div className="bubble-circle">
                 <FontAwesomeIcon icon={faIdCard} />
                 <span>Fraud Protection</span>
